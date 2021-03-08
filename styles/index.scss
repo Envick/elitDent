@@ -5,6 +5,7 @@
 }
 .section {
   &__header {
+    padding: 0 60px;
     height: 86px;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(7px);
@@ -21,15 +22,39 @@
       }
     }
     .navbar-menu {
+      max-width: 843px;
       a {
         font-size: 16px;
         line-height: 100%;
         color: #a0a0a0;
         text-decoration: none;
-        padding-bottom: 11px;
+        padding-bottom: 6px;
       }
       a.active {
         border-bottom: 1px solid #0170b0;
+      }
+    }
+    .call-link {
+      text-decoration: none;
+      img {
+        margin-right: 5px;
+      }
+      div > div:first-child {
+        font-weight: bold;
+        font-size: 23.8235px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #0170b0;
+        margin-bottom: 5px;
+      }
+      div > div:nth-child(2) {
+        font-size: 15.8824px;
+        line-height: 100%;
+        color: #0170b0;
+        border-bottom: 1px solid #0170b0;
+        margin-left: 6px;
       }
     }
   }
