@@ -8,6 +8,27 @@
   overflow: hidden;
   min-height: 2000px; }
 
+.price-link-block {
+  width: 280px;
+  height: 72px;
+  border: 1px solid #ffc6da;
+  border-radius: 53px;
+  padding: 7px; }
+  .price-link-block .price-link {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    line-height: 100%;
+    height: 56px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(276.82deg, #ff0000 -10.3%, #ff2272 75.13%);
+    box-shadow: 0px 0px 15px rgba(255, 34, 114, 0.3);
+    border-radius: 47px; }
+
 .section__header {
   position: sticky;
   top: 0;
@@ -166,7 +187,6 @@
 .section__health {
   position: relative;
   padding-top: 25px;
-  min-height: 636px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbfbfb 100%); }
   @media (max-width: 576px) {
     .section__health {
@@ -204,27 +224,10 @@
       padding-left: 10px; }
       .section__health .health-second-block .plan-text span {
         color: #18bbeb; }
-    .section__health .health-second-block .price-link-block {
-      width: 280px;
-      height: 72px;
-      border: 1px solid #ffc6da;
-      border-radius: 53px;
-      padding: 7px; }
-      .section__health .health-second-block .price-link-block .price-link {
-        font-weight: bold;
-        font-size: 18px;
-        display: flex;
-        padding: 19px 43px;
-        line-height: 100%;
-        height: 56px;
-        text-decoration: none;
-        color: white;
-        background: linear-gradient(276.82deg, #ff0000 -10.3%, #ff2272 75.13%);
-        box-shadow: 0px 0px 15px rgba(255, 34, 114, 0.3);
-        border-radius: 47px; }
 
 .section__before-after {
-  padding-top: 45px; }
+  padding-top: 45px;
+  margin-bottom: 25px; }
   .section__before-after h2 {
     font-size: 48px;
     line-height: 100%;
@@ -243,11 +246,11 @@
     margin-bottom: 25px; }
     @media (max-width: 576px) {
       .section__before-after .complex-health-text {
-        font-size: 12px; } }
+        font-size: 12px;
+        margin-bottom: 12px; } }
   .section__before-after .cocoen-wrap {
     max-width: 708.25px;
     width: 100%;
-    height: 384px;
     display: flex;
     flex-direction: column; }
     .section__before-after .cocoen-wrap .cocoen {
@@ -294,3 +297,178 @@
       @media (max-width: 576px) {
         .section__before-after .cocoen-wrap .helper-cocoen h4 {
           font-size: 10px; } }
+
+.section__service {
+  padding-top: 30px;
+  background-image: url(../images/bg-service.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 692px;
+  padding-bottom: 25px; }
+  .section__service h2 {
+    font-size: 48px;
+    line-height: 120%;
+    color: #ffffff;
+    margin-bottom: 25px; }
+    @media (max-width: 576px) {
+      .section__service h2 {
+        font-size: 24px;
+        font-weight: normal; } }
+  .section__service .services .col-10 {
+    margin-bottom: 5px; }
+  .section__service .item:nth-child(-n + 3) {
+    margin-bottom: 50px; }
+  .section__service .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section__service .item .img-prew {
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px; }
+      @media (max-width: 320px) {
+        .section__service .item .img-prew {
+          width: 73px;
+          height: 73px; } }
+    .section__service .item .service-main-text {
+      font-size: 24px;
+      line-height: 120%;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 5px; }
+      @media (max-width: 786px) {
+        .section__service .item .service-main-text {
+          font-size: 20px; } }
+      @media (max-width: 576px) {
+        .section__service .item .service-main-text {
+          font-size: 15px; } }
+    .section__service .item .service-not-main-text {
+      font-size: 14px;
+      line-height: 120%;
+      color: #aae8ff;
+      text-align: center; }
+      @media (max-width: 786px) {
+        .section__service .item .service-not-main-text {
+          font-size: 12px; } }
+      @media (max-width: 576px) {
+        .section__service .item .service-not-main-text {
+          font-size: 8px; } }
+
+.section__problems {
+  padding-top: 39px; }
+  @media (max-width: 786px) {
+    .section__problems {
+      padding-top: 0; } }
+  .section__problems h2 {
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center; }
+    .section__problems h2 span {
+      color: #18bbeb; }
+    @media (max-width: 576px) {
+      .section__problems h2 {
+        font-size: 24px;
+        padding-left: 42px; } }
+  .section__problems h5 {
+    font-size: 22px;
+    line-height: 155%;
+    color: #a0a0a0; }
+    .section__problems h5 span {
+      color: #18bbeb; }
+    @media (max-width: 576px) {
+      .section__problems h5 {
+        font-size: 12px;
+        padding-left: 42px; } }
+  .section__problems .row {
+    padding-top: 25px; }
+    @media (max-width: 576px) {
+      .section__problems .row {
+        margin: 0;
+        padding-top: 2px; } }
+  .section__problems .consultation {
+    padding-top: 27px;
+    min-width: 240px;
+    max-width: 367px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 576px) {
+      .section__problems .consultation {
+        padding: 0 43px; } }
+    .section__problems .consultation h6 {
+      font-size: 24px;
+      line-height: 150%;
+      color: #29292b; }
+      @media (max-width: 576px) {
+        .section__problems .consultation h6 {
+          font-size: 16px; } }
+    .section__problems .consultation .diagnos-text {
+      font-size: 14px;
+      line-height: 150%;
+      color: #a0a0a0;
+      margin-bottom: 20px; }
+      @media (max-width: 576px) {
+        .section__problems .consultation .diagnos-text {
+          font-size: 10px; } }
+    .section__problems .consultation input {
+      font-size: 18px;
+      line-height: 150%;
+      color: #a3a3a3;
+      border: none;
+      border-bottom: 0.5px solid #a0a0a0;
+      margin-bottom: 30px; }
+      @media (max-width: 576px) {
+        .section__problems .consultation input {
+          font-size: 12px;
+          width: 225px; } }
+    .section__problems .consultation .problem-link {
+      margin-bottom: 46px; }
+      @media (max-width: 576px) {
+        .section__problems .consultation .problem-link {
+          width: 178px;
+          height: 45px;
+          padding: 4px;
+          margin-bottom: 15px; }
+          .section__problems .consultation .problem-link .price-link {
+            width: 169px;
+            height: 36px; } }
+    .section__problems .consultation .doctor img {
+      padding-top: 2px;
+      margin-right: 13px; }
+      @media (max-width: 576px) {
+        .section__problems .consultation .doctor img {
+          width: 20px;
+          height: 22px; } }
+    .section__problems .consultation .doctor .doctor-text {
+      font-size: 14px; }
+      @media (max-width: 576px) {
+        .section__problems .consultation .doctor .doctor-text {
+          font-size: 8px; } }
+      .section__problems .consultation .doctor .doctor-text span {
+        color: #18bbeb;
+        font-size: 18px; }
+        @media (max-width: 576px) {
+          .section__problems .consultation .doctor .doctor-text span {
+            font-size: 10px; } }
+    .section__problems .consultation .address img {
+      padding-top: 2px;
+      margin-right: 13px; }
+      @media (max-width: 576px) {
+        .section__problems .consultation .address img {
+          width: 20px;
+          height: 22px; } }
+    .section__problems .consultation .address .address-text {
+      font-size: 14px; }
+      @media (max-width: 576px) {
+        .section__problems .consultation .address .address-text {
+          font-size: 8px; } }
+      .section__problems .consultation .address .address-text span {
+        color: #18bbeb;
+        font-size: 18px; }
+        @media (max-width: 576px) {
+          .section__problems .consultation .address .address-text span {
+            font-size: 10px; } }
