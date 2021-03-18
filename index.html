@@ -11,6 +11,10 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/cocoen.min.css" />
@@ -316,8 +320,10 @@
       <div class="section__questions">
         <div class="container">
           <h2 class="text-white">Частые вопросы клиентов</h2>
-          <div class="row align-items-center">
-            <div class="col-12 col-lg-6 pr-0 pr-lg-4 first-column-question">
+          <div
+            class="row align-items-center justify-content-between flex-column flex-xl-row"
+          >
+            <div class="col-12 col-xl-6 pr-lg-4 first-column-question">
               <div class="question">
                 <a
                   href="#answer1"
@@ -420,31 +426,165 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6 second-column-question">
-              <div class="form-content  position-relative">
-                <div class="form-questions d-flex flex-column align-items-start">
-                  <h4 class="text-center mb-0  w-100">Есть дополнительные вопросы?</h4>
-                  <h6 class="text-center  mb-0 w-100">Оставьте контакты и мы перезвоним Вам:</h6>
-                    
+            <div
+              class="col-12 col-lg-auto second-column-question d-flex flex-column align-items-center"
+            >
+              <div class="form-content position-relative">
+                <div
+                  class="form-questions d-flex flex-column align-items-start"
+                >
+                  <h4 class="text-center mb-0 w-100">
+                    Есть дополнительные вопросы?
+                  </h4>
+                  <h6 class="text-center mb-0 w-100">
+                    Оставьте контакты и мы перезвоним Вам:
                   </h6>
-                  <input type="text" placeholder="Ваше имя"/>
-                  <input type="text" placeholder="Ваш номер телефона "/>
+                  <input type="text" placeholder="Ваше имя" />
+                  <input type="text" placeholder="Ваш номер телефона " />
                   <div class="price-link-block question-link">
-                    <a class="price-link d-none d-sm-flex">
-                      Заказать звонок
-                    </a>
-                    <a class="price-link d-flex d-sm-none">
-                      Записатья
-                    </a>
+                    <a class="price-link d-none d-sm-flex"> Заказать звонок </a>
+                    <a class="price-link d-flex d-sm-none"> Записатья </a>
                   </div>
 
-                  <img src="images/зуб.png" alt="">
+                  <img src="images/зуб.png" alt="" />
                 </div>
                 <div class="form-back1 form-back"></div>
                 <div class="form-back2 form-back"></div>
               </div>
               <div class="zelim">
-                <img src="images/Стоматолог.png" class="img-fluid" alt="">
+                <img src="images/Стоматолог.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__health-steps">
+        <div class="container-xl px-0">
+          <h2 class="text-center text-blue">Все услуги в одной клинике</h2>
+          <h6 class="text-center">
+            от диагностики до восстановления зуба “под ключ”
+          </h6>
+          <span class="text-blue d-block text-center">Этапы:</span>
+          <div class="steps mx-auto">
+            <div class="step-item step-item1">
+              <img src="images/step1.svg" alt="" />
+              <span
+                >Бесплатная<br />
+                консультация</span
+              >
+              <img
+                src="images/испорченный зуб.png"
+                alt=""
+                class="position-absolute bad-teeth"
+              />
+            </div>
+            <div class="step-item">
+              <img src="images/step2.svg" alt="" />
+              <span
+                >Осмотр<br />
+
+                постановка<br />диагноза</span
+              >
+            </div>
+            <div class="step-item">
+              <img src="images/step3.svg" alt="" />
+              <span
+                >Составление<br />
+                плана<br />лечения</span
+              >
+            </div>
+            <div class="step-item">
+              <img src="images/step4.svg" alt="" />
+              <span>Лечение</span>
+            </div>
+            <div class="step-item step-item5">
+              <img
+                src="images/здоровый зуб.png"
+                class="position-absolute health-teeth"
+                alt=""
+              />
+              <img src="images/step5.svg" alt="" />
+              <span
+                >Бесплатные<br />
+                консультации<br />и сопровождение</span
+              >
+            </div>
+            <img src="images/День.png" class="one-day" alt="" />
+          </div>
+          <h2 class="text-center text-blue">Наши врачи</h2>
+          <div class="doctors-slider-block">
+            <div class="row justify-content-around">
+              <div class="col-12 col-xl-4 left-doctors-block">
+                <a href="#item1" class="doctors-item d-flex align-items-center">
+                  <div>
+                    <img src="images/doctor1.png" alt="" />
+                  </div>
+                  <span>Имя Фамилия</span>
+                </a>
+                <a href="#item2" class="doctors-item d-flex align-items-center">
+                  <div>
+                    <img src="images/doctor2.png" alt="" />
+                  </div>
+                  <span>Зелим Хаманаев</span>
+                </a>
+                <a href="#item3" class="doctors-item d-flex align-items-center">
+                  <div>
+                    <img src="images/doctor3.png" alt="" />
+                  </div>
+                  <span>Имя Фамилия</span>
+                </a>
+                <a href="#item4" class="doctors-item d-flex align-items-center">
+                  <div>
+                    <img src="images/doctor4.png" alt="" />
+                  </div>
+                  <span>Имя Фамилия</span>
+                </a>
+              </div>
+              <div class="col-12 col-sm-6 col-md-5 owl-carousel doctors-slider">
+                <div
+                  data-hash="item1"
+                  class="doctor-slide d-flex flex-column align-items-center"
+                >
+                  <img src="images/doctor-item1.png" alt="" />
+                  <span class="text-blue mb-0">Имя Фамилия</span>
+                  <span
+                    >стоматолог-ортопед<br />
+                    опыт работы: 8 лет</span
+                  >
+                </div>
+                <div
+                  data-hash="item2"
+                  class="doctor-slide d-flex flex-column align-items-center"
+                >
+                  <img src="images/doctor-item2.png" alt="" />
+                  <span class="text-blue mb-0">Зелим Хаманаев</span>
+                  <span
+                    >стоматолог-ортопед<br />
+                    опыт работы: 8 лет</span
+                  >
+                </div>
+                <div
+                  data-hash="item3"
+                  class="doctor-slide d-flex flex-column align-items-center"
+                >
+                  <img src="images/doctor-item3.png" alt="" />
+                  <span class="text-blue mb-0">Имя Фамилия</span>
+                  <span
+                    >стоматолог-ортопед<br />
+                    опыт работы: 8 лет</span
+                  >
+                </div>
+                <div
+                  data-hash="item4"
+                  class="doctor-slide d-flex flex-column align-items-center"
+                >
+                  <img src="images/doctor-item.png" alt="" />
+                  <span class="text-blue mb-0">Имя Фамилия</span>
+                  <span
+                    >стоматолог-ортопед<br />
+                    опыт работы: 8 лет</span
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -484,13 +624,12 @@
           ],
           responsive: {
             0: {
-              items: 1,
-              nav: true,
+              items: 1.8,
+              nav: false,
               margin: 0,
             },
             769: {
               items: 3,
-              nav: false,
               margin: 8,
             },
             993: {
@@ -498,6 +637,15 @@
               nav: true,
             },
           },
+        });
+        $(".doctors-slider").owlCarousel({
+          items: 1,
+          loop: true,
+          URLhashListener: true,
+          smartSpeed: 1000,
+          startPosition: "#item1",
+          animateOut: "animate__fadeOut",
+          animateIn: "animate__fadeIn",
         });
         $(".toggler-nav").click(function () {
           $(".navbar-menu").toggleClass("show");

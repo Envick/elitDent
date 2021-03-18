@@ -9,6 +9,9 @@ body::-webkit-scrollbar {
     width: 0;
   }
 }
+.text-blue {
+  color: #18bbeb;
+}
 .wrapper {
   overflow: hidden;
   min-height: 2000px;
@@ -594,6 +597,9 @@ body::-webkit-scrollbar {
         font-size: 12px;
       }
     }
+    .owl-item {
+      filter: blur(5px);
+    }
     .owl-item.active {
       filter: blur(5px);
       transition: all 2s;
@@ -613,12 +619,9 @@ body::-webkit-scrollbar {
       height: 600px;
       width: 702px;
       @media (max-width: 768px) {
-        width: 250px;
+        width: 100%;
         margin: 0 auto;
         height: auto;
-      }
-      @media (max-width: 576px) {
-        width: 200px;
       }
     }
     .owl-stage-outer {
@@ -632,7 +635,7 @@ body::-webkit-scrollbar {
       height: 100%;
     }
     .slide {
-      max-width: 260px;
+      width: 100%;
       height: 435px;
       @media (max-width: 992px) {
         width: 100%;
@@ -692,9 +695,14 @@ body::-webkit-scrollbar {
       }
     }
     .first-column-question {
+      margin-bottom: 40px;
       @media (max-width: 576px) {
         padding-bottom: 20px;
+        margin-bottom: 20px;
       }
+    }
+    .question:not(:last-child) {
+      margin-bottom: 16px;
     }
     .question {
       background: #fff;
@@ -705,7 +713,6 @@ body::-webkit-scrollbar {
         padding: 10px 12px;
       }
       position: relative;
-      margin-bottom: 16px;
       .collapse,
       .collapsing {
         padding-right: 53px;
@@ -839,6 +846,7 @@ body::-webkit-scrollbar {
           right: -10px;
         }
       }
+
       .question-link {
         @media (max-width: 576px) {
           width: 178px;
@@ -849,6 +857,295 @@ body::-webkit-scrollbar {
             font-size: 11.5151px;
             height: 36px;
           }
+        }
+      }
+    }
+  }
+  &__health-steps {
+    padding-top: 45px;
+    background-image: url(../images/health-steps-back.png);
+    background-repeat: no-repeat;
+    background-position: 0 112px;
+    @media (max-width: 1750px) {
+      background: none;
+    }
+    @media (max-width: 576px) {
+      padding-top: 35px;
+      background-position: right 283px;
+      background-repeat: no-repeat;
+      background-image: url(../images/steps-back-mobile.png);
+    }
+    h2 {
+      margin-bottom: 3px;
+      font-size: 48px;
+
+      @media (max-width: 576px) {
+        font-size: 24px;
+      }
+    }
+    h6 {
+      margin-bottom: 11px;
+      color: #a0a0a0;
+      font-size: 22px;
+      @media (max-width: 576px) {
+        font-size: 12px;
+      }
+    }
+    span.text-blue {
+      margin-bottom: 35px;
+    }
+    .steps {
+      position: relative;
+      width: 900px;
+      background-image: url(../images/Line8.svg);
+      background-repeat: no-repeat;
+      min-height: 253.22px;
+      background-position: 78px 70px;
+      margin-bottom: 32px;
+      @media (max-width: 992px) {
+        width: 650px;
+      }
+      @media (max-width: 768px) {
+        width: 500px;
+      }
+      @media (max-width: 576px) {
+        width: 320px;
+        background-image: url(../images/adaptive-line.svg);
+        background-position: 0 0;
+      }
+      .one-day {
+        position: absolute;
+        top: 0;
+        left: 70px;
+        @media (max-width: 1200px) {
+          left: 50px;
+        }
+        @media (max-width: 992px) {
+          width: 313px;
+        }
+        @media (max-width: 576px) {
+          width: 215px;
+        }
+      }
+      .step-item {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+        line-height: 120%;
+        color: #18bbeb;
+        @media (max-width: 1200px) {
+          font-size: 16px;
+        }
+        @media (max-width: 992px) {
+          font-size: 14px;
+        }
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+
+        span {
+          text-align: center;
+          line-height: 120%;
+        }
+        img {
+          margin-bottom: 23px;
+        }
+        .health-teeth {
+          top: -47px;
+          left: 85px;
+          @media (max-width: 1200px) {
+            width: 100px !important;
+            height: 120px !important;
+            top: -48px;
+            left: 55px;
+          }
+          @media (max-width: 768px) {
+            top: -29px;
+            left: 46px;
+          }
+
+          @media (max-width: 576px) {
+            width: 54.48px !important;
+            height: 78.63px !important;
+          }
+        }
+        .bad-teeth {
+          top: -14px;
+          left: 35px;
+          @media (max-width: 1200px) {
+            top: -14px;
+            left: 10px;
+          }
+          @media (max-width: 768px) {
+            left: -1px;
+          }
+          @media (max-width: 576px) {
+            left: 18px;
+            top: -7px;
+            width: 20.04px;
+            height: 33.41px !important;
+          }
+        }
+      }
+      .step-item:nth-child(1) {
+        left: 20px;
+        top: 82px;
+        @media (max-width: 576px) {
+          left: 16px;
+          top: 45px;
+          img {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      .step-item:nth-child(2) {
+        left: 211px;
+        top: 52px;
+        @media (max-width: 1200px) {
+          left: 192px;
+          top: 52px;
+        }
+        @media (max-width: 992px) {
+          left: 167px;
+          top: 52px;
+        }
+        @media (max-width: 768px) {
+          left: 122px;
+          top: 59px;
+        }
+        @media (max-width: 576px) {
+          left: 126px;
+          top: 28px;
+          img {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      .step-item:nth-child(3) {
+        left: 410px;
+        top: 84px;
+        @media (max-width: 1200px) {
+          left: 401px;
+          top: 77px;
+          left: 314px;
+          top: 57px;
+        }
+        @media (max-width: 992px) {
+          left: 314px;
+          top: 57px;
+        }
+        @media (max-width: 768px) {
+          left: 229px;
+          top: 50px;
+        }
+        @media (max-width: 576px) {
+          left: 229px;
+          top: 46px;
+          img {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      .step-item:nth-child(4) {
+        left: 623px;
+        top: 104px;
+        @media (max-width: 1200px) {
+          top: 112px;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        @media (max-width: 992px) {
+          left: 480px;
+          top: 85px;
+        }
+        @media (max-width: 768px) {
+          left: 343px;
+          top: 58px;
+        }
+        @media (max-width: 576px) {
+          left: 40px;
+          top: 170px;
+          img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      .step-item:nth-child(5) {
+        right: -71px;
+        top: 62px;
+        @media (max-width: 1200px) {
+          right: -33px;
+          top: 82px;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        @media (max-width: 992px) {
+          right: -30px;
+          top: 101px;
+        }
+        @media (max-width: 768px) {
+          right: -5px;
+          top: 68px;
+        }
+        @media (max-width: 576px) {
+          right: 99px;
+          top: 147px;
+          img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+    .doctors-slider-block {
+      h2 {
+        margin-bottom: 18px;
+      }
+      .left-doctors-block {
+        padding-top: 35px;
+      }
+      .doctors-item {
+        padding: 13px 0 13px 45px;
+        text-decoration: none;
+        color: #000000;
+        opacity: 0.5;
+        div {
+          margin-right: 45px;
+          width: 67px;
+          height: 74px;
+        }
+        .doctors.item.active {
+          opacity: 1;
+        }
+      }
+      .doctor-slide {
+        img {
+          margin-bottom: 38px;
+          height: 450px;
+        }
+        span:nth-of-type(1) {
+          font-size: 24px;
+          line-height: 120%;
+        }
+        span:nth-of-type(2) {
+          font-size: 18px;
+          line-height: 120%;
         }
       }
     }
