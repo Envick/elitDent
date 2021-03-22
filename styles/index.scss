@@ -571,6 +571,7 @@ body::-webkit-scrollbar {
     }
   }
   &__advantages {
+    padding-top: 41px;
     h2 {
       font-size: 48px;
       line-height: 120%;
@@ -578,6 +579,25 @@ body::-webkit-scrollbar {
       span {
         color: #18bbeb;
       }
+    }
+    h3 {
+      margin-bottom: 11px;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(
+          360deg,
+          #ffffff 26.34%,
+          rgba(255, 255, 255, 0) 83.87%
+        ),
+        #ededed;
+      -webkit-background-clip: text;
+      font-weight: 800;
+      font-size: 62px;
+      @media (max-width: 576px) {
+        font-size: 20px;
+      }
+    }
+    h4 {
+      font-size: 22px;
     }
   }
   &__slider {
