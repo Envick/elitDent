@@ -279,15 +279,17 @@
         </div>
       </div>
       <div class="section__advantages">
-        <div class="container">
+        <div class="custom-container-advantages mx-auto">
           <h2 class="text-center">
             <span>Нам доверяют</span> лечение зубов уже 7 лет
           </h2>
-          <div class="row flex-column advantages-content">
+          <div class="row flex-column advantages-content mx-0">
             <div
-              class="col-12 row row-cols-2 align-self-end ustify-content-between"
+              class="col-12 row row-cols-2 align-self-end justify-content-between px-0 mx-0"
             >
-              <div class="col-6 d-flex flex-column justify-content-center">
+              <div
+                class="col-auto d-flex flex-column justify-content-center px-0"
+              >
                 <h3 class="text-left">потому что:</h3>
                 <h4 class="text-left">
                   Наши врачи работают на
@@ -295,42 +297,57 @@
                     >дорогостоящем<br />
                     оборудовании.</span
                   >
-                  Это повышает качество работы более чем в 20 раз.
+                  Это повышает качество<br />
+                  работы более чем в 20 раз.
                 </h4>
               </div>
-              <div class="col-6">
+              <div class="col-auto px-0 img-col-left">
                 <img class="img-fluid" src="images/advantages-1.png" alt="" />
               </div>
             </div>
             <div
-              class="col-12 align-self-start row row-cols-2 justify-content-between"
+              class="col-12 align-self-start row row-cols-2 justify-content-between px-0 mx-0"
             >
-              <div class="col-6">
+              <div class="col-auto px-0 img-col-right">
                 <img class="img-fluid" src="images/advantages-2.png" alt="" />
               </div>
-              <div class="col-6 d-flex flex-column justify-content-center">
+              <div
+                class="col-auto px-0 d-flex flex-column justify-content-center"
+              >
                 <h3 class="text-right">из-за того, что:</h3>
                 <h4 class="text-right">
-                  <span class="text-blue">У нас фиксированные цены.</span> В
-                  нашей клинике<br />
-                  невозможно такое, что один пациент лечится<br />
-                  на одну сумму, а второй на другую при одинаковых видах услуг.
+                  <span class="text-blue">У нас фиксированные цены.</span
+                  ><br class="d-xl-none" />
+                  В нашей клинике<br />
+                  невозможно такое,<br class="d-xl-none" />
+                  что один пациент<br class="d-xl-none" />
+                  лечится<br />
+                  на одну сумму,<br class="d-xl-none" />
+                  а второй на другую при<br />
+                  одинаковых видах услуг.
                 </h4>
               </div>
             </div>
             <div
-              class="col-12 row row-cols-2 align-self-end ustify-content-between"
+              class="col-12 row row-cols-2 align-self-end justify-content-between px-0 mx-0"
             >
-              <div class="col-6 d-flex flex-column justify-content-center">
+              <div
+                class="col-auto d-flex flex-column justify-content-center px-0"
+              >
                 <h3 class="text-left">а также:</h3>
                 <h4 class="text-left">
                   Потому что у нас есть
-                  <span class="text-blue">собственный учебный центр.</span> Мы
-                  повышаем квалификацию своих специалистов, приглашая известных
-                  профессоров и профессионалов<   br/> стоматологии.
+                  <span class="text-blue"
+                    >собственный учебный<br />
+                    центр.</span
+                  >
+                  Мы повышаем квалификацию своих<br />
+                  специалистов,приглашая известных<br />
+                  профессоров и профессионалов <br />
+                  стоматологии.
                 </h4>
               </div>
-              <div class="col-6">
+              <div class="col-auto px-0 img-col-left">
                 <img class="img-fluid" src="images/advantages-1.png" alt="" />
               </div>
             </div>
@@ -663,12 +680,19 @@
           </div>
         </div>
       </div>
-      <div class="section__address">
+      <div class="section__address position-relative">
         <h2 class="text-blue text-center">Наш адрес</h2>
         <h5 class="text-center">мы находимся в центре Москвы</h5>
         <div class="map">
-          <div class="container-xl">
-            <div class="card ml-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.775165054125!2d37.48648681604622!3d55.74503540005829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5494e2f6607d5%3A0x47173aafb1471f2a!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0KTQuNC70LXQstGB0LrQsNGPLCAyNSwg0JzQvtGB0LrQstCwLCAxMjEzMDk!5e0!3m2!1sru!2sru!4v1616410706663!5m2!1sru!2sru"
+            class="map-frame"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <div class="container-xl pr-0">
+            <div class="card mx-auto mx-xl-0">
               <div class="card-header bg-white p-0">
                 <img
                   src="images/card-map-img.png"
@@ -686,6 +710,75 @@
                   <a href="" class="price-link">Записаться на приём</a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__consultation">
+        <div class="container-xl">
+          <div class="content d-flex flex-column">
+            <h2 class="text-blue">
+              Узнать цены<br class="d-sm-none" />
+              и сроки,<br />
+              получить консультацию<br />
+              и записаться на приём
+            </h2>
+            <h6>Вы можете, заказав <span>БЕСПЛАТНЫЙ</span> звонок</h6>
+            <input type="text" placeholder="Ваше имя" />
+            <input type="text" placeholder="Ваш номер телефона" />
+            <div class="price-link-block">
+              <a href="" class="price-link"> Позвоните мне </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__footer">
+        <div class="custom-container mx-auto">
+          <div class="row mx-0 justify-content-between">
+            <div class="col-auto d-none d-sm-flex flex-column">
+              <div class="footer-logo">
+                <img src="images/footer_logo.png" alt="" />
+              </div>
+              <a href="">Политика конфидициальности</a>
+            </div>
+            <div class="col-auto d-none d-lg-flex flex-column">
+              <a href="" class="main-link">Услуги</a>
+              <a href="">Терапевтическая стоматология</a
+              ><a href="">Протезирование</a><a href="">Имплантация зубов</a
+              ><a href="">Ортодонтия</a><a href="">Хирургия</a
+              ><a href="">Детская стоматология</a
+              ><a href="">Исправление прикуса</a>
+            </div>
+            <div class="col-auto d-none d-xl-flex flex-column">
+              <a href="" class="mail-link">Компания</a>
+              <a href="">Главная</a><a href="">Услуги</a><a href="">Акция</a
+              ><a href="">Врачи</a><a href="">Вопросы и ответы</a
+              ><a href="">Примеры работ</a>
+            </div>
+            <div
+              class="col-12 col-sm-auto d-flex flex-column align-items-center align-items-sm-end"
+            >
+              <div class="footer-call">+7 (985) 765-09-07</div>
+              <div class="footer-socials">
+                <a href=""><img src="images/footer_wats.svg" alt="" /></a
+                ><a href=""><img src="images/footer_faceb.svg" alt="" /></a
+                ><a href=""><img src="images/footer_vk.svg" alt="" /></a
+                ><a href=""><img src="images/footer_inst.svg" alt="" /></a>
+              </div>
+              <img
+                src="images/footer_logo.png"
+                class="d-sm-none footer-mobile-logo"
+                alt=""
+              />
+              <a href="" class="footer-mobile-confidence d-sm-none"
+                >Политика конфидициальности</a
+              >
+              <a
+                href=""
+                class="d-block mt-sm-auto text-center text-sm-right footer-agency"
+                >Разработали с любовью<br />
+                AS AGENCY</a
+              >
             </div>
           </div>
         </div>
@@ -771,6 +864,17 @@
               ? $(this).addClass("active-hash")
               : $(this).removeClass("active-hash");
           });
+        });
+        $(".doctors-slider").on("changed.owl.carousel", function (event) {
+          let hash;
+          setTimeout(() => {
+            hash = $(".doctors-slider .owl-item.active > div").data("hash");
+            $(".doctors-item").each(function () {
+              $(this).attr("href") == "#" + hash
+                ? $(this).addClass("active-hash")
+                : $(this).removeClass("active-hash");
+            });
+          }, 1);
         });
       });
     </script>

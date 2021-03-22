@@ -9,6 +9,10 @@ body::-webkit-scrollbar {
     width: 0;
   }
 }
+
+.place-card {
+  display: none;
+}
 .text-blue {
   color: #18bbeb;
 }
@@ -36,6 +40,12 @@ body::-webkit-scrollbar {
     background: linear-gradient(276.82deg, #ff0000 -10.3%, #ff2272 75.13%);
     box-shadow: 0px 0px 15px rgba(255, 34, 114, 0.3);
     border-radius: 47px;
+  }
+}
+.custom-container {
+  width: 1170px;
+  @media (max-width: 1200px) {
+    width: 100%;
   }
 }
 .section {
@@ -572,6 +582,21 @@ body::-webkit-scrollbar {
   }
   &__advantages {
     padding-top: 41px;
+    margin-bottom: 5px;
+    .custom-container-advantages {
+      width: 1300px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @media (max-width: 1299px) {
+        width: 100%;
+      }
+    }
+    img {
+      @media (max-width: 1199px) {
+        width: 500px;
+        height: 400px;
+      }
+    }
     h2 {
       font-size: 48px;
       line-height: 120%;
@@ -579,8 +604,13 @@ body::-webkit-scrollbar {
       span {
         color: #18bbeb;
       }
+      @media (max-width: 576px) {
+        font-size: 24px;
+        line-height: 120%;
+      }
     }
     h3 {
+      width: auto;
       margin-bottom: 11px;
       -webkit-text-fill-color: transparent;
       background: linear-gradient(
@@ -598,6 +628,7 @@ body::-webkit-scrollbar {
     }
     h4 {
       font-size: 22px;
+      width: auto;
     }
   }
   &__slider {
@@ -1270,7 +1301,8 @@ body::-webkit-scrollbar {
     }
   }
   &__address {
-    margin-bottom: 1000px;
+    @media (max-width: 1200px) {
+    }
     h2 {
       font-size: 48px;
       margin-bottom: 3px;
@@ -1279,21 +1311,45 @@ body::-webkit-scrollbar {
       font-size: 24px;
       line-height: 100%;
       color: #a0a0a0;
+      margin-bottom: 91px;
     }
     .map {
       position: relative;
-      padding-top: 91px;
+    }
+    .map-frame {
+      width: 100%;
       height: 660px;
-      background: url(../images/map-bg.png);
-      background-repeat: no-repeat;
-      background-size: cover;
+    }
+    .price-link-block {
+      @media (max-width: 576px) {
+        padding: 5px;
+        width: 212px;
+        height: 53px;
+        .price-link {
+          width: 200px;
+          height: 42px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .container-xl {
+      height: 100%;
+      position: absolute;
+      top: 0;
       @media (max-width: 1200px) {
-        background: url(../images/map-bg-mobile.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: relative;
+        height: 360px;
+      }
+      @media (max-width: 576px) {
+        height: 220px;
       }
     }
     .card {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
       width: 412px;
       height: 480px;
       padding: 15px 13px 0 13px;
@@ -1301,10 +1357,19 @@ body::-webkit-scrollbar {
       backdrop-filter: blur(10px);
       border-radius: 15px;
       @media (max-width: 1200px) {
-        position: absolute;
-        right: 50%;
-        transform: translate(50%, 0);
-        bottom: -350px;
+        position: relative;
+        top: -120px;
+        transform: none;
+      }
+      @media (max-width: 576px) {
+        width: 257.5px;
+        height: 300px;
+        top: -80px;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(6.25px);
+        border-radius: 9.375px;
+        border: none;
+        bottom: -230px;
       }
     }
     .card-header {
@@ -1313,9 +1378,172 @@ body::-webkit-scrollbar {
     .card-body {
       span {
         font-size: 14px;
+        @media (max-width: 576px) {
+          font-size: 9px;
+        }
       }
+
       h6 {
         font-size: 24px;
+        @media (max-width: 576px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  &__consultation {
+    padding-top: 14px;
+    min-height: 534px;
+    height: 534px;
+    margin-bottom: 51px;
+    @media (max-width: 576px) {
+      padding-top: 0;
+      height: 615px;
+    }
+    .container-xl {
+      height: 100%;
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      background: url(../images/seat.png) no-repeat 100% 0;
+
+      @media (max-width: 992px) {
+        background-position: 350px 0;
+      }
+      @media (max-width: 786px) {
+        background-position: 300px 0;
+      }
+      @media (max-width: 576px) {
+        background-position: -46px -35px;
+      }
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 120%;
+      margin-bottom: 10px;
+      padding-top: 65px;
+      @media (max-width: 1200px) {
+        padding-top: 150px;
+      }
+      @media (max-width: 576px) {
+        padding-top: 240px;
+        width: 162px;
+        font-size: 24px;
+      }
+    }
+    h6 {
+      font-size: 18px;
+      line-height: 150%;
+      color: #a0a0a0;
+      span {
+        font-weight: 700;
+      }
+      @media (max-width: 576px) {
+        width: 162px;
+        font-size: 24px;
+        width: 129px;
+        font-size: 12px;
+      }
+    }
+    input {
+      font-size: 18px;
+      line-height: 150%;
+      width: 351px;
+      color: #a3a3a3;
+      border: none;
+      border-bottom: 0.5px solid #a0a0a0;
+      background: none;
+      margin-bottom: 30px;
+      @media (max-width: 576px) {
+        font-size: 12px;
+        width: 300px;
+        margin-bottom: 25px;
+      }
+    }
+    .price-link-block {
+      @media (max-width: 576px) {
+        width: 237px;
+        height: 60px;
+        padding: 6px;
+      }
+      .price-link {
+        @media (max-width: 576px) {
+          width: 227px;
+          height: 47px;
+          font-weight: bold;
+          font-size: 15.3333px;
+        }
+      }
+    }
+  }
+  &__footer {
+    background: #0170b0;
+    padding-top: 40px;
+    padding-bottom: 63px;
+    @media (max-width: 575px) {
+      padding-bottom: 30px;
+    }
+    a {
+      color: #8be5ff;
+      font-size: 18px;
+      line-height: 150%;
+      text-decoration: none;
+    }
+    .main-link {
+      font-size: 24px;
+    }
+    .col-auto:first-child a,
+    .col-auto:last-child a {
+      font-size: 14px;
+      text-decoration: underline;
+    }
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+    .footer-call {
+      font-weight: bold;
+      font-size: 23.8235px;
+      line-height: 100%;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+    .footer-mobile-confidence {
+      font-size: 10px;
+      margin-bottom: 15px;
+    }
+    .footer-mobile-logo {
+      width: 174.94px;
+      height: 65px;
+      margin-bottom: 10px;
+    }
+    .footer-agency {
+      @media (max-width: 575px) {
+        font-size: 12px;
+      }
+    }
+    .footer-socials {
+      display: flex;
+      @media (max-width: 575px) {
+        margin-bottom: 20px;
+      }
+      a {
+        width: 30px;
+        height: 30px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        @media (max-width: 575px) {
+          width: 57px;
+          height: 57px;
+        }
+      }
+      a:not(:last-child) {
+        margin-right: 12px;
+        @media (max-width: 576px) {
+          margin-right: 22px;
+        }
       }
     }
   }
